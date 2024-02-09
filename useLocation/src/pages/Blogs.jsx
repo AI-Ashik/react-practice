@@ -1,3 +1,4 @@
+// Blogs Component
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { data } from "../data";
@@ -24,7 +25,9 @@ const Blogs = () => {
             <article style={{ margin: "20px 5px" }} key={id}>
               <h2>{title}</h2>
               <p>{truncateString(body, 100)}</p>
-              <Link to={title}>Learn More</Link>
+              <Link to={`/blogs/${title}`} state={{ title, body }}>
+                Learn More
+              </Link>
             </article>
           );
         })}
