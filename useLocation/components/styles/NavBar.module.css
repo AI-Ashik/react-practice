@@ -1,0 +1,46 @@
+/* NavBar.module.css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #007bff;
+  padding: 25px 0;
+}
+
+.navLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navLinks li {
+  margin-right: 20px;
+}
+
+.navLinks li:last-child {
+  margin-right: 0;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px; /* Increase font size */
+  transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+  color: white; /* Change text color on hover */
+}
+
+.activeLink {
+  color: white; /* Change text color for active link */
+  font-size: 20px; /* Increase font size for active link */
+}
