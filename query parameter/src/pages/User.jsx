@@ -24,6 +24,13 @@ const User = () => {
     e.preventDefault();
     // Update search parameters with form data
     setSearchParams(formData);
+
+    // empty the input after submitting the form
+    setFormData({
+      name: "",
+      age: "",
+      id: "",
+    });
   };
 
   return (
