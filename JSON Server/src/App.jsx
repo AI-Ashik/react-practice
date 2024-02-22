@@ -5,9 +5,13 @@ function App() {
   const [data, setData] = useState([]);
 
   const fetchData = async () => {
-    const response = await axios.get("http://localhost:3001/posts");
-    const data = response.data;
-    setData(data);
+    try {
+      const response = await axios.get("http://localhost:3001/posts");
+      const response = response.data;
+      setData(response);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   };
 
   useEffect(() => {
