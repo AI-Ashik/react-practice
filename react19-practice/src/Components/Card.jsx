@@ -1,0 +1,51 @@
+const Card = () => {
+  const cards = [
+    {
+      image:
+        "data:image/png;base64,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",
+      headline: "Card 1",
+      description: "This is the description for Card 1.",
+    },
+    {
+      image:
+        "data:image/png;base64,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",
+      headline: "Card 2",
+      description: "This is the description for Card 2.",
+    },
+    {
+      image:
+        "data:image/png;base64,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",
+      headline: "Card 3",
+      description: "This is the description for Card 3.",
+    },
+    // Add more cards as needed
+  ];
+
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-5 py-10">
+      {cards.map((card, index) => (
+        <div
+          key={index}
+          className="bg-white rounded-lg shadow-xl hover:shadow-xxl transition duration-300"
+        >
+          <img
+            src={card.image}
+            alt={card.headline}
+            className="w-full h-48 object-cover rounded-t-lg"
+          />
+          <div className="p-6">
+            <h3 className="text-xl font-bold mb-2 text-gray-800">
+              {card.headline}
+            </h3>
+            <p className="text-gray-600 mb-4">{card.description}</p>
+            <button className="bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded transition duration-300">
+              Learn More
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Card;
