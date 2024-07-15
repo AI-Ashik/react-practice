@@ -1,7 +1,7 @@
-import ProfileCardChallange from "./Components/ProfileCard";
+import NetflixSeries from "./Components/NetflixSeries";
 
 const App = () => {
-  return <ProfileCardChallange />;
+  return <NetflixSeries />;
 };
 
 export default App;
