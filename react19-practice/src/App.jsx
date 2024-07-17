@@ -1,7 +1,7 @@
-import NetflixSeries from "./Components/NetflixSeries";
+import EventProps from "./Components/EventProps";
 
 const App = () => {
-  return <NetflixSeries />;
+  return <EventProps />;
 };
 
 export default App;

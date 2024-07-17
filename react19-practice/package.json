@@ -4,14 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.0.0-rc-f38c22b244-20240704",
-    "react-dom": "^19.0.0-rc-f38c22b244-20240704"
+    "react-dom": "^19.0.0-rc-f38c22b244-20240704",
+    "styled-components": "^6.1.11"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
