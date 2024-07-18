@@ -1,7 +1,7 @@
-import EventProps from "./Components/EventProps";
+import State1 from "./Components/hooks/state1";
 
 const App = () => {
-  return <EventProps />;
+  return <State1 />;
 };
 
 export default App;
