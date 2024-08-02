@@ -1,7 +1,7 @@
-import State1 from "./Components/hooks/state1";
+import DerivedState from "./Components/DerivedState";
 
 const App = () => {
-  return <State1 />;
+  return <DerivedState />;
 };
 
 export default App;
