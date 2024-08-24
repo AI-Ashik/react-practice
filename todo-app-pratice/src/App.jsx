@@ -5,6 +5,10 @@ const App = () => {
   const [task, setTask] = useState([]);
   const [dateTime, setDateTime] = useState("");
 
+  const handleClearAllTask = () => {
+    setTask([]);
+  };
+
   const handldeInputChange = (e) => {
     setInputValue(e.target.value);
   };
@@ -60,6 +64,7 @@ const App = () => {
           </ul>
         </section>
       </section>
+      <button onClick={handleClearAllTask}>Clear All</button>
     </div>
   );
 };
